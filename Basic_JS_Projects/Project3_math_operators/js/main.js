@@ -31,6 +31,12 @@ function addOne1(){
   document.getElementById("Math").innerHTML= or;
 }
 
+function decrement(){
+  var or = parseInt(document.getElementById("Math").innerHTML,10);
+ or--//
+  document.getElementById("Math").innerHTML= or;
+}
+
 //used MATH objects
 function Randomize(){
   document.getElementById("Math").innerHTML= Math.round(Math.random()*100);
