@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JS test 9 timer</title>
+	<style>
+	</style>
+	<script src="js/main.js">
+	</script>
+	<link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+	<div class="slideshow-container">
+		<div class="mySlides fade" style="display: block">
+			<div class="number_text">1 of 3</div>
+			<img src="slideshow/4T4A1159.jpg" height="150px">
+			<div class="text">Assembling the Bridge</div>
+
+		</div>
+
+		<div class="mySlides fade">
+			<div class="number_text">2 of 3</div>
+			<img src="slideshow/4T4A1261.jpg" height="150px">
+			<div class="text">Gene in Lego Style</div>
+
+		</div>
+
+		<div class="mySlides fade">
+			<div class="number_text">3 of 3</div>
+			<img src="slideshow/4T4A1259.jpg" height="150px">
+			<div class="text">Lego Art</div>
+
+		</div>
+
+		<!--nexst buttons-->
+		<A class="prev" onclick="plusSlides(-1)">&#10094;</A>
+		<A class="next" onclick="plusSlides(1)">&#10095;</A>
+	</div>
+	<br>
+	<!--dots-->
+	<div style="text-align:center">
+		<span class="dot active" onclick="currentSlide(1)"></span>
+		<span class="dot" onclick="currentSlide(2)"></span>
+		<span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+
+	<hr>
+
+	<input id="seconds" value="3" />
+	<button onclick="countdown()">start timer</button>
+	<p id="displayer">STUFF GOES HERE</p>
+
+
+</body>
+
+</html>
