@@ -1,3 +1,5 @@
+var global_delay_time = 1000;
+
 
 function countdown() {
   var seconds =
@@ -6,7 +8,7 @@ function countdown() {
   function tick() {
     displayer.innerHTML = seconds;
     seconds--;
-    var delay = setTimeout(tick, 1000);
+    var delay = setTimeout(tick, global_delay_time);
 
     if (seconds < 0) {
       alert("timeup");
@@ -34,7 +36,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
- // alert("showslides");
+  debugger;
+  debug("SHow slides. slideIndex=" + slideIndex);
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -44,14 +47,7 @@ function showSlides(n) {
  // alert("showslides pt2 slides.length = " + slides.length);
   //I condensed the code a bit here -sjs
   for (i = 0; i < slides.length; i++) {
-   // alert("runninmg for loop. i= " + i.toString());
-    // if(i==slideIndex){
-    //   dots[slideIndex-1].className += " active";
-    //   //this line doesnt execute the first time - images are not loaded yet?:-------------------------
-
-    //   slides[slideIndex-1].style.display = "block";
-    // }
-
+   debug("runninmg for loop. i= " + i.toString());
     slides[i].style.display = "none";
     dots[i].className = dots[i].className.replace(" active", "");
   }
@@ -62,4 +58,10 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
 
 
+}
+
+function debug(message){
+
+console.log(message);
+//alert(message);
 }
