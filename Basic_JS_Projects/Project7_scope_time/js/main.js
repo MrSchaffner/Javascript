@@ -1,6 +1,8 @@
+var message;
+
 
 function doSomething() {
-  var message;
+ 
   var hours = new Date().getHours();
   if (hours < 12) {
     message = "its morning";
