@@ -82,4 +82,3 @@ function describeSelf() {
     return "I am " + ((this.bald == true) ? "bald" : "not bald");
   } else { return "silence"; }
 }
-
