@@ -129,9 +129,9 @@ function drawWinLine(startX, startY, endX, endY) {
         c.strokeStyle = 'rgba(70,70,70,.5)'; //just a color
         c.stroke();
 
-        if (startX <= endX || startY <= endY) { //if not at endpoint - makes no sense.
+        if (startX <= endX || startY <= endY) { //if not at endpoint - 
             if (currentX < endX) { currentX += 10; }
-            // adding line for the ONE winLine that has an endY less than startY - diagonal from bottom left
+            // adding line for the ONE winLine that has an endY less than startY - diagonal from bottom left:
             if (startY > endY) {
                 if (currentY > endY) { currentY -= 10; }
             } else {

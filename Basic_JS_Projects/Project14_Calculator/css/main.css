@@ -1,0 +1,73 @@
+html {
+    box-sizing: border-box;
+    color: blue;
+    background-color: lightgray;
+}
+
+/* ::after creates a pseudo element after. * targets all elements. */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid darkslategray
+}
+
+.screen {
+    width: 100%;
+    font-size: 5rem;
+    height: 80px;
+    border: none;
+    background-color: black;
+    color: orange;
+    text-align: right;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10% 10% 0 0;
+}
+
+button {
+    height: 70px;
+    border-radius: 3px;
+    border: 1px solid darkslateblue;
+    background-color: transparent;
+    font-size: 3.2rem;
+    color: black;
+    background-image: linear-gradient(to bottom,
+            rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 25%, orange 50%, orange 65%, rgb(255, 251, 0));
+    text-shadow: 0 1px rgba(255, 255, 255, .4);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .4),
+        inset 0 1px 0 0 rgba(255, 255, 255, .4),
+        inset 0 -1px 0 0 rgba(255, 255, 255, .05),
+        0 1px 0 0 rgba(255, 255, 255, .4);
+}
+
+button:hover {
+    /* background-color doesnt work because the gradient is on top of it; */
+    background-image: linear-gradient(to bottom, gray 25%, darkorange 65%);
+    color: blue;
+}
+
+.operator {
+    color: black;
+    background-color: lightgray;
+}
+
+.all-clear {
+    background-image: linear-gradient(to bottom, gray 25%, darkorange 65%)
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.equal-sign {
+    /* row column row-size column-size */
+    grid-area: 2 / 4/ span 4 / span 1; 
+    height: 100%;
+}
