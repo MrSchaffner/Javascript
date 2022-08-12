@@ -1,0 +1,53 @@
+input{
+    width: 50%;
+    margin-bottom:6px;
+    box-sizing: border-box;
+    padding: 12px; /* internal padding*/
+
+    border-radius: 4px;
+    border: 2px solid grey;
+}
+
+input:focus{
+    border:3px solid lightskyblue;
+    border-style: none;
+}
+
+input[type=submit]{
+    border: none;
+    background-color: lightskyblue;
+    color: white;
+}
+
+ol,li{
+    width: 200px;
+    display: block;
+    margin: 15px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#air{
+    color: white;
+    background-color: palegoldenrod;
+    border-radius: 5% 5% 5% 5%;
+    text-shadow: rgba(0, 0, 0, .4) 3px 2px 2px;
+}
+
+#earth{
+    color: white;
+    background-color: forestgreen;
+    border-radius: 5% 5% 5% 5%;
+    text-shadow: rgba(0, 0, 0, .4) 3px 2px 2px;
+}
+#fire{
+    color: white;
+    background-color: orange;
+    border-radius: 5% 5% 5% 5%;
+    text-shadow: rgba(0, 0, 0, .4) 3px 2px 2px;
+}#water{
+    color: white;
+    background-color: lightskyblue;
+    border-radius: 5% 5% 5% 5%;
+    text-shadow: rgba(0, 0, 0, .4) 3px 2px 2px;
+}

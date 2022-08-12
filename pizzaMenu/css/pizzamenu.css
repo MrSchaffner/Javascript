@@ -1,0 +1,200 @@
+
+body {
+    background-image:url("../img/bricks.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.4em;
+    color: white;
+}
+
+#menuBG{
+    width: 800px;
+    height: 600px;
+    margin: 10px auto;
+    background-color: rgba(165, 97, 42, 0.835);
+    border-radius: 0 0 5% 5%;
+}
+
+#menu{
+    color:yellow;
+    background-color: yellow;
+}
+
+#formMenu{
+    width:800px;
+    height: 200px;
+}
+
+
+.static{
+    position: static;
+    }
+     .relative {
+    position: relative;
+     }
+    .absolute{
+    position: absolute;
+    }
+    
+     .fixed{
+    position: fixed;
+    background-color: aqua;
+     }
+    
+    .sticky{
+        background-color: transparent;
+        position: sticky;
+        top:0px;
+    }
+
+#showText{
+    width: 500px;px;
+    height: auto
+    margin: 0 auto;
+    float: left;
+}
+
+#totalPrice{
+    width: 165px;px;
+    height: auto;
+    margin: 0 auto;
+    float: right;
+}
+
+.left{
+    width:200px;
+    height:200px;
+    float:left;
+}
+
+.right{
+    width:200px;
+    height: 200px;
+    float:right;
+}
+
+
+#cart{
+    position:relative;
+    top:300px;
+}
+
+#btnOrder {
+    margin: 0px auto;
+    width:300px;
+    height: 40px;
+}
+
+
+
+h1 {
+    text-align: center;
+    background: #781212;
+    padding: 30px;
+    margin: 0px;
+    border: 2px solid #591C1C;
+}
+
+h2 {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+h3 {
+    text-align: center;
+    font-weight: lighter;
+    padding: 10px;
+    color:white;
+    background: black;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 13px;
+}
+
+#buttonContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border: 3px solid brown;
+    height:50px;
+    /* position:relative;
+    border: 3px solid green; */
+}
+
+input[type=button] {
+    /* position:absolute;
+    margin: 200px;
+    width:200px;
+    top:50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+
+    padding: 15px 15px 30px 15px;
+    border-radius: 15%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    /* color: white;
+    background: #3F2020; */
+    display: inline-block;
+}
+
+#totalPrice {
+    font-size: 20px;
+    color:white;
+    background: black;
+    padding: 15px 15px;
+    
+    margin: 3px;
+    border-radius: 10px;
+}
+
+#showText {
+    font-size: 20px;
+    color:white;
+    background: black;
+    margin: 2px;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+p {
+    text-align: center; 
+}
+
+/* 
+
+
+.container {
+    text-shadow: 0;
+    float: left;
+    width: 35%;
+    clear: right;
+}
+
+.btn-container {
+    padding-top: 20px;
+}
+
+
+
+.order_menu {
+    border-radius: 10px;
+    display: inline-block;
+ 
+}
+
+
+  
+#displayTxt {
+    background: #6A1111;
+    border-radius: 12px;
+}
+ 
+#runningTotal2 {
+    background:#6B0F28;
+    border-radius: 12px;
+    margin-bottom: -80px;  
+}
+ */

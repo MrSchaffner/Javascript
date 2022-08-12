@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>JS test 10 Loops</title>
+	<style>
+		p {
+			font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		}
+	</style>
+
+	<script src="js/main.js" defer>
+//defer keyword needed to make sure canvas exists before it is referenced in main.js
+	</script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<p>a canvas </p>
+	<canvas id="canvas" width="500" height="200" style="border: solid;""></canvas>
+
+
+<p class=" paragraphs">One Paragraph</p>
+
+		<div id="switchDiv" style="background-color:palegoldenrod">
+			<input id="colorizer" value="color">
+			<button onclick="switcher()">Click Me for SWITCHER</button>
+			<p id="displayer6">red blue or green are supported.</p>
+		</div>
+
+		<p class="paragraphs">Two Paragraph</p>
+
+		<form name="nameForm" autocomplete="on" onsubmit="return validateForm()" method="POST">
+			<label for="frmNameC">Name</label>
+<input name="fname" id="frmNameC" placeholder="First name" required autocomplete="fname"><br>
+<label for="frmNameB">Name</label>
+<input name="lname" id="frmNameB" placeholder="Last name" required autocomplete="lname"><br>
+<label for="frmNameA">Name</label>
+<input name="name" id="frmNameA" placeholder="Full name" required autocomplete="name"><br>
+
+		<input type="submit" value="Submit">
+		</form>
+
+
+</body>
+
+</html>
